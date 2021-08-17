@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, yellowgreen, cyan);
+        color: white;
+        font-size: 20px;
+      }
+      .main {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: none;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px;
+        width: 20%;
+      }
+      fieldset {
+        border: 5px solid white;
+        border-radius: 20px;
+        text-align: center;
+      }
+      legend {
+        text-align: center;
+        padding: 15px;
+        font-size: 40px;
+      }
+      .inputBox {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        background: none;
+        width: 60%;
+        /* pointer-events: none; */
+      }
+      .submit {
+        width: 100%;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .submit:hover {
+        background-image: linear-gradient(to right, yellowgreen, cyan);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <fieldset>
+        <legend><strong>Login</strong></legend>
+        <div class="box">
+          <label for="login">Usuário:</label>
+          <input
+            class="inputBox"
+            type="email"
+            name="login"
+            id="login"
+            placeholder="Digite seu email"
+            required
+          />
+          <br /><br />
+          <div class="box">
+            <label for="password">Senha:</label>
+            <input
+              class="inputBox"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          <br /><br />
+          <div class="box">
+            <input class="submit" type="submit" id="submit" />
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
